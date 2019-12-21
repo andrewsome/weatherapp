@@ -24,7 +24,7 @@ This project is a code test from Service Victoria, which demonstrate use Create-
 3. To launches the test runner in the interactive watch mode.
     use: `npm run test`
 
-    ![example](http://g.recordit.co/i9NkCC0XuB.git) 
+    ![example](http://g.recordit.co/i9NkCC0XuB.gif) 
 
 4. Showcase
 
