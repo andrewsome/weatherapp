@@ -19,12 +19,12 @@ This project is a code test from Service Victoria, which demonstrate use Create-
 
     If you have an app is runing on `http://localhost:3000`, select 'yes' to continus.
 
-    ![example](https://g.recordit.co/SFcTyLzvCX.gif)
+    ![example](http://g.recordit.co/SFcTyLzvCX.gif)
 
 3. To launches the test runner in the interactive watch mode.
     use: `npm run test`
 
-    ![example](https://g.recordit.co/i9NkCC0XuB.git) 
+    ![example](http://g.recordit.co/i9NkCC0XuB.git) 
 
 4. Showcase
 
