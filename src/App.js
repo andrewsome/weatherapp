@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WeatherDetail from './components/WeatherDetail';
+import DashBoard from './components/DashBoard';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedCity: null,
+    }
+  }
+
+  handleClick = (name) => {
+    this.setState({
+      selectedCity: name,
+    })
+  }
+
+  handleReturn = () => {
+     this.setState({
+       selectedCity: null,
+     })
+  }
+  
+  render() {
+    const { selectedCity } = this.state;
+    return (
+      <div>
+        {selectedCity !== null ? this.one(selectedCity): this.all()}
+      </div>
+    )
+  }
+
+  one(name) {
+		return (
+      <WeatherDetail name={name} handleReturn={this.handleReturn} />
+		);
+	}
+
+	all() {
+		return (
+      <DashBoard handleClick={this.handleClick} />
+		);
+	}
 }
 
 export default App;
